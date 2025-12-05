@@ -2,6 +2,58 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Development Environment Setup
+
+### Prerequisites
+- **Node.js** 18+ and **npm** 9+ (or yarn/pnpm)
+- **Git** for version control
+
+### Local Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/daaron-wright/KyndrylDesignSystemComponents.git
+   cd KyndrylDesignSystemComponents
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the dev server**
+   ```bash
+   npm run dev
+   ```
+   The app will be available at `http://localhost:5173/` with hot module reloading (HMR).
+
+### Available Commands
+
+- `npm run dev` — Start Vite dev server with HMR
+- `npm run build` — Build TypeScript and Vite production bundle to `dist/`
+- `npm run preview` — Preview production build locally
+- `npm run lint` — Run ESLint checks
+- `npm run test` — Run Vitest test suite
+- `npm run test:watch` — Run tests in watch mode
+- `npm run storybook` — Start Storybook dev server at `http://localhost:6006/`
+- `npm run build-storybook` — Build static Storybook for deployment
+
+### Storybook
+
+This project uses Storybook for component documentation and development.
+
+**Local Storybook:**
+```bash
+npm run storybook
+```
+Visit `http://localhost:6006/` to browse and test components interactively.
+
+**Deployed Storybook (GitHub Pages):**
+The Storybook is automatically deployed to GitHub Pages on every push to `main`:
+- URL: `https://daaron-wright.github.io/KyndrylDesignSystemComponents/`
+
+---
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
