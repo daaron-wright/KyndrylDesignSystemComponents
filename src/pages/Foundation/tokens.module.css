@@ -1,0 +1,22 @@
+.page {
+  padding: 40px 24px;
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+.container { max-width: 900px; margin: 0 auto }
+.heading { font-size: var(--type-xl); margin: 0 0 20px 0 }
+.section { background: var(--color-surface); padding: 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); margin-bottom: 20px }
+.sectionTitle { font-size: var(--type-lg); margin: 0 0 12px 0 }
+
+.radiiGrid { display:flex; gap:16px; align-items:center }
+.radiusCard { display:flex; flex-direction:column; align-items:center; gap:8px }
+.radiusPreview { width:120px; height:64px; background: linear-gradient(180deg, #fff, #f3f6fb); border:1px solid rgba(16,24,40,0.04) }
+.radiusMeta { font-size:13px; color:var(--color-muted) }
+
+.elevationGrid { display:flex; gap:16px; flex-wrap:wrap }
+.elevationCard { width:200px; display:flex; flex-direction:column; gap:8px; align-items:flex-start }
+.elevationPreview { width:100%; height:80px; background:var(--color-surface); border-radius:8px; display:flex; align-items:center; justify-content:center }
+.previewInner { padding:8px 12px; background:var(--color-surface); border-radius:6px }
+.elevationMeta { font-weight:600 }
+.elevationVar { font-size:12px; color:var(--color-muted) }

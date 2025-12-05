@@ -1,0 +1,81 @@
+.link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: none;
+  filter: brightness(0.95);
+}
+
+.inline {
+  color: #3d3c3c;;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.15s ease;
+}
+
+.inline:hover {
+  color: #696363;
+}
+
+.inline svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.inline.lg svg {
+    width: 24px;
+    height: 24px;
+}
+
+.inline.md svg {
+    width: 19px;
+    height: 19px;
+}
+
+.inline.sm svg {
+    width: 14px;
+    height: 14px;
+}
+
+.sm {
+  font-size: 14px;
+}
+
+.md {
+  font-size: 19px;
+}
+
+.lg {
+  font-size: 24px;
+}
+
+.startIcon,
+.endIcon {
+  display: inline-flex;
+}
+
+.lg .startIcon,
+.lg .endIcon {
+  height: 36px;
+  align-items: center;
+}
+
+.md .startIcon,
+.md .endIcon {
+  height: 28.5px;
+  align-items: center;
+}
+
+.sm .startIcon,
+.sm .endIcon {
+  height: 28.5px;
+  align-items: center;
+}
+

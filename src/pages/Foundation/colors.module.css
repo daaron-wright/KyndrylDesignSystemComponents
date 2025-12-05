@@ -1,0 +1,16 @@
+.page { padding: 40px 24px; background: var(--color-bg); min-height: 100vh }
+.container { max-width: 1100px; margin: 0 auto }
+.heading { font-size: var(--type-xl); margin: 0 0 20px 0 }
+.section { background: var(--color-surface); padding: 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); margin-bottom: 20px }
+.sectionTitle { font-size: var(--type-lg); margin: 0 0 12px 0 }
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px }
+.card { display:flex; gap:12px; align-items:center; padding:8px; border-radius:8px }
+.swatch { width:56px; height:56px; border-radius:8px; border:1px solid rgba(16,24,40,0.04) }
+.meta { display:flex; flex-direction:column }
+.varName { font-weight:600 }
+.hex { color: var(--color-muted); font-size:13px }
+.examples { display:flex; gap:16px; flex-wrap:wrap }
+.cardExample { width:320px; border-radius:8px; overflow:hidden; border:1px solid var(--color-border) }
+.cardHeader { padding:16px }
+.cardTitle { color: white; font-weight:600 }
+.cardBody { padding:12px; background:var(--color-surface); color:var(--color-text) }

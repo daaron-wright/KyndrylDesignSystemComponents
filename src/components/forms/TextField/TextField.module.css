@@ -1,0 +1,110 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label { 
+    display:block; 
+    margin-bottom: var(--space-2); 
+    color: var(--color-text);
+    font-size: var(--type-xl);
+}
+
+.input {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--cool-gray-30);
+  border-radius: var(--radius-xs);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--type-xl);
+  text-indent: 2px;
+  box-sizing: border-box;
+  width: 100% 
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input {
+  /* leave existing padding but ensure space for toggle on the right */
+  padding-right: calc(var(--space-4) + 28px);
+}
+
+.input:focus, 
+.input:active,
+.input:focus-visible {
+     border-color: var(--color-border-focus);
+     outline: none;
+}
+
+.inputError { 
+    border-color: var(--color-danger); 
+}
+
+.input::placeholder {
+  color: var(--color-border);
+} 
+
+.eyeButton {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.eyeButton:focus {
+  outline: 2px solid var(--color-border-focus);
+  border-radius: 4px;
+}
+
+.eyeButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hint { 
+    margin-top: var(--space-1); 
+    color: var(--color-muted); 
+}
+
+.error {
+  margin-top: var(--space-1);
+  color: var(--color-danger);
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: var(--type-md);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.errorBadge {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-danger);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.errorText {
+  color: var(--color-danger);
+  font-weight: 500;
+}

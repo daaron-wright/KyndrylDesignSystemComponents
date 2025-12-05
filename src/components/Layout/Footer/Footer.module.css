@@ -1,0 +1,145 @@
+.footer {
+	padding: 40px 16px;
+	font-size: 14px;
+	color: var(--text-primary);
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.footer > div {
+	width: 100%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+.footer a {
+	color: var(--text-primary);
+	text-decoration: none;
+}
+
+.footer a.logo {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.footer a.logo svg {
+	display: block;
+	height: 32px;
+	width: auto;
+}
+
+.footer .text {
+	color: var(--text-level-secondary);
+	font-size: 24px;
+	font-weight: 300;
+	padding-left: 16px;
+}
+
+.footer a.logo .text {
+	/* ensure link color doesn't override the brand text */
+	color: var(-text-level-secondary);
+}
+
+.breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 0;
+}
+
+.breadcrumb .breadcrumbLink {
+	color: var(--text-level-secondary);
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.breadcrumb .breadcrumbLink:hover {
+	color: var(--text-primary-hover);
+	text-decoration: underline;
+	
+}
+
+.breadcrumb .breadcrumbLink:active {
+	color: var(--spruce-60);
+	text-decoration: none;
+}
+
+.breadcrumb .breadcrumbLinkActive {
+	color: var(--spruce-60);
+}
+
+
+.breadcrumbSeparator {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 32px;
+}
+
+.breadcrumbSeparator svg {
+	display: block;
+	width: 11px;
+	height: 20px;
+}
+/* Medium screens: 1024px and up */
+@media (min-width: 1024px) {
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.footer > div {
+		max-width: 896px;
+	}
+
+	.container {
+		max-width: 896px;
+	}
+}
+
+/* Large screens: 1440px and up */
+@media (min-width: 1440px) {
+	.footer > div {
+		max-width: 1264px;
+	}
+
+	.container {
+		max-width: 1264px;
+	}
+}
+
+/* Mobile screens: up to 767px */
+@media (max-width: 767px) {
+	.container {
+		flex-direction: column;
+		gap: 16px;
+		align-items: center;
+	}
+	.footer { 
+		padding: 24px 0;
+	}
+
+	.footer a.logo {
+		justify-content: center;
+		order: 2;
+	}
+
+	.breadcrumb {
+		margin-bottom: 32px;
+		justify-content: right;
+		order: 1;
+	}
+}

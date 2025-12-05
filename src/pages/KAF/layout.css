@@ -1,0 +1,54 @@
+.kaf-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 320px;
+}
+
+.kaf-main {
+  flex: 1;
+  /* Default (mobile): minimal margins */
+  /* padding-top: 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding-bottom: 16px; */
+  box-sizing: border-box;
+}
+
+/* Content wrapper that enforces a fixed max width (so pages don't change width based on their inner elements) */
+.kaf-content {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Medium screens: 1024px and up */
+@media (min-width: 1024px) {
+  .kaf-main {
+    /*  padding-top: 64px;
+    padding-bottom: 40px; */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* For 1024px viewport, horizontal margins should be 64px each => content width = 1024 - 128 = 896px */
+  .kaf-content {
+    max-width: 896px;
+  }
+}
+
+/* Large screens: 1440px and up */
+@media (min-width: 1440px) {
+  .kaf-main {
+    /* padding-top: 80px;
+    padding-bottom: 40px; */
+  }
+
+  /* For 1440px viewport, horizontal margins should be 88px each => content width = 1440 - 176 = 1264px */
+  .kaf-content {
+    max-width: 1264px;
+  }
+}
